@@ -1,9 +1,11 @@
-public class AudioFile {
+import java.util.Date;
 
-public Picture(String name, int size, Date date) {
-super(name, size, date);
-}
+public class AudioFile extends File {
 
-public void open(){}
-public void close(){}
+    public AudioFile(String name, int size, Date date) {
+        super(name, size, date);
+    }
+
+    public void open(){}
+    public void close(){}
 }

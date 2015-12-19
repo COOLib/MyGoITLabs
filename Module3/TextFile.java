@@ -1,9 +1,11 @@
-public class TextFile {
+import java.util.Date;
 
-public TextFile(String name, int size, Date date) {
-super(name, size, date);
-}
+public class TextFile extends File {
 
-public void open(){}
-public void close(){}
+    public TextFile(String name, int size, Date date) {
+        super(name, size, date);
+    }
+
+    public void open(){}
+    public void close(){}
 }

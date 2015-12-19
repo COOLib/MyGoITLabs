@@ -1,9 +1,11 @@
-public class Picture {
+import java.util.Date;
 
-public Picture(String name, int size, Date date) {
-super(name, size, date);
-}
+public class Picture extends File {
 
-public void open(){}
-public void close(){}
+    public Picture(String name, int size, Date date) {
+        super(name, size, date);
+    }
+
+    public void open(){}
+    public void close(){}
 }
