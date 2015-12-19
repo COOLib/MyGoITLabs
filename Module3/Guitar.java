@@ -1,10 +1,10 @@
-public abstract class Guitar {
+public  class Guitar extends MusicInstruments{
 
-	public Guitar(String name, String style, int size, int weight) {
-		super(name, style, size,weight);
-	}
+    public Guitar(String name, String style, int size, int weight) {
+        super(name, style, size,weight);
+    }
 
-	public void plant(){}
+    public void plant(){}
 
-	public void grow(){}
+    public void grow(){}
 }
