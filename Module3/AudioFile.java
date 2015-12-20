@@ -6,6 +6,10 @@ public class AudioFile extends File {
         super(name, size, date);
     }
 
-    public void open(){}
-    public void close(){}
+    public void open(){
+        System.out.println("Audio file was opened.");
+    }
+    public void close(){
+        System.out.println("Audio file was closed.");
+    }
 }

@@ -6,6 +6,10 @@ public class Picture extends File {
         super(name, size, date);
     }
 
-    public void open(){}
-    public void close(){}
+    public void open(){
+        System.out.println("Picture was opened.");
+    }
+    public void close(){
+        System.out.println("Picture was closed.");
+    }
 }
