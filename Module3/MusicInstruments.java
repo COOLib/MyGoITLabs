@@ -18,7 +18,7 @@ public abstract class MusicInstruments {
     public int getSize(){return size;}
     public int getWeight() {return weight;}
 
-    public abstract void plant();
+    public abstract void play();
 
-    public abstract void grow();
+    public abstract void tune();
 }

@@ -5,7 +5,11 @@ public class Piano extends MusicInstruments{
         super(name, style, size,weight);
     }
 
-    public void plant(){}
+    public void play(){
+        System.out.println("Piano starts playing");
+    }
 
-    public void grow(){}
+    public void tune(){
+        System.out.println("Piano is tuning now");
+    }
 }

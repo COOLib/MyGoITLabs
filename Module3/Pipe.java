@@ -4,7 +4,11 @@ public class Pipe extends MusicInstruments{
         super(name, style, size,weight);
     }
 
-    public void plant(){}
+    public void play(){
+        System.out.println("Pipe starts playing");
+    }
 
-    public void grow(){}
+    public void tune(){
+        System.out.println("Pipe is tuning now");
+    }
 }
