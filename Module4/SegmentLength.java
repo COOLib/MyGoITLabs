@@ -4,8 +4,6 @@
 public class SegmentLength {
 
     public double calculateSegmentLength(int xA, int xB, int yA, int yB) {
-        double lengthOfSegment;
-        lengthOfSegment = Math.sqrt(Math.pow((xB - xA), 2) + Math.pow((yB - yA), 2));
-        return lengthOfSegment;
+        return Math.sqrt(Math.pow((xB - xA), 2) + Math.pow((yB - yA), 2));
     }
 }

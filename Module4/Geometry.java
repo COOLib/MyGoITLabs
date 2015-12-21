@@ -4,17 +4,14 @@
 public class Geometry {
 
     public double triangleSquare(int height, int base) {
-        double triangleSquare = 0.5 * height * base;
-        return triangleSquare;
+        return 0.5 * height * base;
     }
 
     public double rectangleSquare(double width, double height) {
-        double rectangleSquare = width * height;
-        return rectangleSquare;
+        return width * height;
     }
 
     public double circleSquare(double radius) {
-        double circleSquare = Math.PI * radius * radius;
-        return circleSquare;
+        return Math.PI * radius * radius;
     }
 }

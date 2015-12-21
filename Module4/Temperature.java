@@ -4,12 +4,10 @@
 public class Temperature {
 
     public double toFahrenheit(int degreeInCelsius) {
-        double fahrenheit = 1.8 * degreeInCelsius + 33.8;
-        return fahrenheit;
+        return 1.8 * degreeInCelsius + 33.8;
     }
 
     public double toCelsius(int degreeInFahrenheit) {
-        double celsius = (degreeInFahrenheit - 32) / 1.8;
-        return celsius;
+        return (degreeInFahrenheit - 32) / 1.8;
     }
 }
