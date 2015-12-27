@@ -1,5 +1,3 @@
- * Created by COOLib on 24.12.2015.
- */
 public class MaxAndMin {
 
     public static int getMaxElement(int[] array) {
