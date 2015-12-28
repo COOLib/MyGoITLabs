@@ -7,12 +7,7 @@ public class Picture extends File {
     }
 
     public void open() {
-        try {
-            throw new IllegalStateException("Exception");
-            //System.out.println("Picture was opened.");
-        } catch (IllegalStateException e) {
-            System.out.println("There is no such file at this place!");
-        }
+        System.out.println("Picture was opened.");
     }
 
     public void close() {

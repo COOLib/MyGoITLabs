@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -7,14 +8,12 @@ public class Directory {
     private Date date;
     private ArrayList<File> files = new ArrayList<File>();
 
-    public void initFiles() {
-        try {
-            files.add(new AudioFile("AudioFile", 20000, new Date()));
-            files.add(new TextFile("TextFile", 5000, new Date()));
-            files.add(new Picture("Picture", 150000, new Date()));
-        } catch (IllegalStateException e) {
-            System.out.println("An error has occurred in the program");
-        }
+    public ArrayList<File> getListOfFiles() {
+        return files;
+    }
+
+    public void addFile(File file) {
+        files.add(file);
     }
 
     public Directory(String name, Date date) {
@@ -26,10 +25,15 @@ public class Directory {
         return false;
     }
 
-    public ArrayList<String> namesOfContainedFiles() {
+    public ArrayList<String> namesOfContainedFiles() throws IllegalStateException {
         ArrayList<String> names = new ArrayList<String>();
-        for (File file : files)
+        for (File file : files) {
+            if (file.getSize() > 10000) {
+                throw new IllegalStateException("Exception");
+            }
             names.add(file.getName());
+            System.out.println(file.getName());
+        }
         return names;
     }
 }

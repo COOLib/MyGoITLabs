@@ -6,13 +6,8 @@ public class AudioFile extends File {
         super(name, size, date);
     }
 
-    public void open() {
-        try {
-            throw new IllegalStateException("Exception");
-            // System.out.println("Audio file was opened.");
-        } catch (IllegalStateException e) {
-            System.out.println("There is no such file at this place!");
-        }
+    public void open() throws IllegalStateException {
+        System.out.println("Audio file was opened.");
     }
 
     public void close() {
