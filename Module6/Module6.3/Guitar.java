@@ -9,11 +9,6 @@ public class Guitar extends MusicInstrument {
     }
 
     public void tune() {
-        try {
-            throw new IllegalStateException("Exception");
-            //System.out.println("Guitar is tuning now");
-        } catch (Exception e) {
-            System.out.println("Can't tune guitar");
-        }
+        System.out.println("Guitar is tuning now");
     }
 }

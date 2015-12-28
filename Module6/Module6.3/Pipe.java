@@ -5,12 +5,7 @@ public class Pipe extends MusicInstrument {
     }
 
     public void play() {
-        try {
-            throw new Exception("Excepyion");
-            //System.out.println("Pipe starts playing");
-        } catch (Exception e) {
-            System.out.println("Can't tune Pipe");
-        }
+        System.out.println("Pipe starts playing");
     }
 
     public void tune() {

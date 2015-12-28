@@ -3,8 +3,7 @@ import java.util.ArrayList;
 public class MusicShop {
 
     private String name;
-    private int quantityOfInstruments;
-    private ArrayList<MusicInstrument> Instruments = new ArrayList<MusicInstrument>();
+    private ArrayList<MusicInstrument> instruments = new ArrayList<MusicInstrument>();
     private ArrayList<String> allInstrumentNames;
 
     public MusicShop(String name) {
@@ -15,18 +14,25 @@ public class MusicShop {
         return name;
     }
 
-    public void addInstrument(MusicInstrument instrument) {
-        Instruments.add(instrument);
+    public ArrayList<MusicInstrument> getList() {
+        return instruments;
     }
 
-    public void setNamesOfInstruments(MusicInstrument instrument) {
-        instrument.setName("Grand Piano");
+    public void addInstrument(MusicInstrument instrument) {
+        instruments.add(instrument);
     }
 
     public ArrayList<String> getNamesOfInstrument() {
-        for (MusicInstrument inst : Instruments) {
+        for (MusicInstrument inst : instruments) {
             allInstrumentNames.add(inst.getName());
         }
         return allInstrumentNames;
+    }
+
+    public void tuneInstrument(MusicInstrument inst) throws MyMusicInstrumentException {
+        if (inst.getName().equals("")) {
+            throw new MyMusicInstrumentException("Exception");
+        }
+        inst.tune();
     }
 }

@@ -6,12 +6,7 @@ public class Piano extends MusicInstrument {
     }
 
     public void play() {
-        try {
-            throw new Exception("Exception");
-            //System.out.println("Piano starts playing");
-        } catch (Exception e) {
-            System.out.println("Can' tune Piano");
-        }
+        System.out.println("Piano starts playing");
     }
 
     public void tune() {
