@@ -4,19 +4,16 @@
 public class MonteKarlo {
 
     public static double countIntegral(double minLimit, double maxLimit, int accuracy) {
-        double sum = f(minLimit);
+
+        Integral integral = new Integral();
+        double sum = integral.f(minLimit);
         double x = minLimit;
         double step = (maxLimit - minLimit) / accuracy;
         for (int i = 0; i < accuracy; i++) {
             x += step;
-            sum += f(x);
+            sum += integral.f(x);
         }
-        double integral = step * sum;
-        return integral;
-    }
-
-    public static double f(double x) {
-        double y = 7 * x + Math.pow(x, 3) + Math.pow(2, x);
-        return y;
+        double resultIntegral = step * sum;
+        return resultIntegral;
     }
 }
