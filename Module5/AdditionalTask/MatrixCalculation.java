@@ -8,10 +8,7 @@ public class MatrixCalculation {
         if (a == null) {
             return null;
         }
-        if (a.length == 0) {
-            return a;
-        }
-        if (a[0].length == 0) {
+        if (a.length == 0 || a[0].length == 0) {
             return a;
         }
 
@@ -25,22 +22,13 @@ public class MatrixCalculation {
 
     public static int[][] plus(int[][] a, int[][] b) {
 
-        if (a == null) {
+        if (a == null || b == null) {
             return null;
         }
-        if (b == null) {
+        if (a.length != b.length || a[0].length != b[0].length) {
             return null;
         }
-        if (a.length != b.length) {
-            return null;
-        }
-        if (a.length == 0) {
-            return a;
-        }
-        if (a[0].length != b[0].length) {
-            return null;
-        }
-        if (a[0].length == 0) {
+        if (a.length == 0 || a[0].length == 0) {
             return a;
         }
 
@@ -55,22 +43,13 @@ public class MatrixCalculation {
 
     public static int[][] minus(int[][] a, int[][] b) {
 
-        if (a == null) {
+        if (a == null || b == null) {
             return null;
         }
-        if (b == null) {
+        if (a.length != b.length || a[0].length != b[0].length) {
             return null;
         }
-        if (a.length != b.length) {
-            return null;
-        }
-        if (a.length == 0) {
-            return a;
-        }
-        if (a[0].length != b[0].length) {
-            return null;
-        }
-        if (a[0].length == 0) {
+        if (a.length == 0 || a[0].length == 0) {
             return a;
         }
 
@@ -85,10 +64,7 @@ public class MatrixCalculation {
 
     public static int[][] matrixMultiply(int[][] a, int[][] b) {
 
-        if (a == null) {
-            return null;
-        }
-        if (b == null) {
+        if (a == null || b == null) {
             return null;
         }
         if (a[0].length != b.length) {
