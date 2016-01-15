@@ -2,10 +2,7 @@
 
 public class MusicShop {
 
-    /* Здесь методы addInstrument и getNamesOfInstruments совершают     одинаковые действия,
-     практически дублируя друг друга.
-    Список имен можно получить обычным образом,
-     вытягивая имена из элементов списка инструментов
+    /* Here addInstrument and methods getName Of Instruments perform the same actions, almost overlapping each other. The list of names can be obtained in the usual way by pulling the names of the list items Insmtruments
     */
 
     private String name;
