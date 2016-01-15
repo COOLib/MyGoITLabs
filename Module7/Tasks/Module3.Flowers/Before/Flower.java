@@ -1,7 +1,7 @@
 public abstract class Flower {
 
- /* Здесь, вместо создания строки и вывода в консоль в каждом подклассе,
-     можно вызывать её из суперкласса
+ /* Here, instead of creating a String and output to the console in each subclass,
+      You can call it from a superclass
      */
 
     private String name;
