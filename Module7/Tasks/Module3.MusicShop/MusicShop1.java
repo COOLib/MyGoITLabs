@@ -4,7 +4,7 @@ public class MusicShop1 {
 
     private String name;
     private int quantityOfInstruments;
-    private ArrayList<MusicInstruments> Instruments = new ArrayList<MusicInstruments>();
+    private ArrayList<MusicInstruments> instruments = new ArrayList<MusicInstruments>();
 
     public MusicShop1(String name) {
         this.name = name;
@@ -14,8 +14,12 @@ public class MusicShop1 {
         return name;
     }
 
+    public ArrayList<MusicInstruments> getInstruments(){
+        return instruments;
+    }
+
     public void addInstrument(MusicInstruments instrument) {
-        Instruments.add(instrument);
+        instruments.add(instrument);
     }
 
     public void setQuantity(int quantity) {
