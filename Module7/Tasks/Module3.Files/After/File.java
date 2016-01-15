@@ -1,10 +1,6 @@
-import java.util.Date;
+﻿import java.util.Date;
 
 public abstract class File {
-
-     /* Здесь, вместо создания строки и вывода в консоль в каждом подклассе,
-     можно вызывать её из суперкласса
-     */
 
     private String name;
     private int size;
