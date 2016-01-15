@@ -29,7 +29,8 @@ public class MusicShop {
     }
 
     /*Каждый раз при вызове метода getNamesOfInstruments
-     в коллекцию добавляется полный список инструментов и не удаляется
+     в коллекцию добавляется полный список инструментов
+	 и не удаляется
     */
 
     public ArrayList<String> getNamesOfInstrument() {
