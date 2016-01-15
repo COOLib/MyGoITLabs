@@ -3,7 +3,7 @@
  */
 public class Temperature {
 
-	//Здесь есть анти-паттерн Magic Number(Example: 1.8, 32)
+	//Here, Anti-pattern Magic Number(Example: 1.8, 32)
 
     public double toFahrenheit(int degreeInCelsius) {
         return 1.8 * degreeInCelsius + 32;
