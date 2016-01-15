@@ -2,7 +2,9 @@
 
 public class MusicShop {
 
-    /* Here addInstrument and methods getName Of Instruments perform the same actions, almost overlapping each other. The list of names can be obtained in the usual way by pulling the names of the list items Insmtruments
+    /* Here addInstrument and methods getName Of Instruments perform the same actions,
+ almost overlapping each other. The list of names can be obtained in the usual way
+ by pulling the names of the list items Insmtruments
     */
 
     private String name;
