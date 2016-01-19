@@ -2,7 +2,9 @@ import Files.File;
 import Flowers.Flower;
 import MusicShop.MusicInstrument;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 /**
  * Created by COOLib on 18.01.2016.
@@ -11,6 +13,11 @@ public class MyCollectionPrinter {
 
     public static void printingOfFiles(Collection<File> collection) {
 
+        for (File file : collection) {
+            System.out.println(file.toString());
+        }
+        System.out.println();
+        System.out.println();
         System.out.printf("%14s%10s%10s", "File name" + " | ", "Size" + " | ", "Date");
         System.out.println();
         int firstColumn = 14;
@@ -90,4 +97,30 @@ public class MyCollectionPrinter {
         }
     }
 
+    public static List collectionSorting(List<File> collection) {
+
+        File[] fileArray = new File[collection.size()];
+        int k = 0;
+        for (File file : collection) {
+            fileArray[k] = file;
+            k++;
+        }
+
+        for (int i = 0; i < fileArray.length; i++) {
+            for (int j = i; j < fileArray.length; j++) {
+                if (fileArray[i].getSize() < fileArray[j].getSize()) {
+                    File f = fileArray[i];
+                    fileArray[i] = fileArray[j];
+                    fileArray[j] = f;
+                }
+            }
+        }
+
+        List<File> col = new ArrayList<File>();
+
+        for (int i = 0; i < fileArray.length; i++) {
+            col.add(fileArray[i]);
+        }
+        return col;
+    }
 }
