@@ -7,6 +7,8 @@ public class MyIntCharStringTransformer {
         return cases;
     }
 
+    // Записываю в массив все случаи попадания символов в диапазон больших и маленьких букв.
+    // Остальные символы оставляю в массиве без изменений
     public int[] getUpperCases(char[] array) {
 
         cases = new int[array.length];
@@ -22,6 +24,7 @@ public class MyIntCharStringTransformer {
         return cases;
     }
 
+    // Преобразую символьный массив в числовой для дальнейшего его закодирования
     public int[] charsToInts(char[] myChars) {
 
         int[] myInts = new int[myChars.length];
@@ -36,7 +39,7 @@ public class MyIntCharStringTransformer {
         }
         return myInts;
     }
-
+    // Преобразую полученный числовой массив обратно в символьный
     public char[] intsTochars(int[] myInts) {
 
         char[] myChars = new char[myInts.length];
@@ -51,7 +54,7 @@ public class MyIntCharStringTransformer {
         }
         return myChars;
     }
-
+    // Собираю строку из полученного символьного массива
     public String makeString(char[] myChars) {
 
         StringBuilder myString = new StringBuilder();

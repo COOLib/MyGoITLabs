@@ -7,6 +7,7 @@ public class CaesarToCollection {
 
     private List<CaesarAlgorithm> algorithmList = new ArrayList<CaesarAlgorithm>();
 
+    // Привожу коллекцию файлов к коллекции строк и кодирую каждую строку
     public List<String> encryptionCaesar(List<File> collection) {
 
         if (collection.equals(null)) {
@@ -26,6 +27,7 @@ public class CaesarToCollection {
         return myList;
     }
 
+    // Декодирую коллекцию строк в результирующую коллекцию строк
     public List<String> decryptionCaesar(List<String> collection) {
 
         List<String> myList = new ArrayList<String>();

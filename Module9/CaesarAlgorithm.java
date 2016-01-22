@@ -5,6 +5,7 @@ public class CaesarAlgorithm {
     private static int lettersAmount = 26;
     private MyIntCharStringTransformer transform = new MyIntCharStringTransformer();
 
+    // Кодирую строку методом Цезаря
     public String encoding(String string) {
 
         char[] chars = string.toCharArray();
@@ -18,6 +19,7 @@ public class CaesarAlgorithm {
         return myNewString;
     }
 
+    // Дескодирую закодированную мной строку методом Цезаря
     public String decoding(String string) {
 
         char[] chars = string.toCharArray();
