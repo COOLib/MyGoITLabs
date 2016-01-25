@@ -5,7 +5,7 @@ public class Test {
 
        ReadAndWrite rnw = new ReadAndWrite();
 
-        rnw.writeFile(s);
+        rnw.writeHandleStringToFile();
 
         String s1 = rnw.readFile();
         System.out.println(s1);

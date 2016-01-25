@@ -1,5 +1,6 @@
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Scanner;
 
 /**
  * Created by COOLib on 24.01.2016.
@@ -8,7 +9,20 @@ public class ReadAndWrite {
 
     public void writeFile(String s) {
 
-        String str = new String();
+
+        try {
+            FileEncryption.encryptFile(s);
+
+        } catch (IOException e) {
+            System.out.println("Error! Trouble with a string!");
+            e.printStackTrace();
+        }
+    }
+
+    public void writeHandleStringToFile() {
+
+        Scanner scanner = new Scanner(System.in);
+        String s = scanner.nextLine();
         try {
             FileEncryption.encryptFile(s);
 
